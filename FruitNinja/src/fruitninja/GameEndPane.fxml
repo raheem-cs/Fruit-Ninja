@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="210.0" prefWidth="477.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fruitninja.GameEndPaneController">
+   <children>
+      <ImageView fitHeight="212.0" fitWidth="479.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/end_game.png" />
+         </image>
+      </ImageView>
+      <Text fill="#34f011" layoutX="165.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Score: ">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtScore" fill="#ffc600" layoutX="278.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="300">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtBestScore" fill="#ffcc00" layoutX="27.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Congratulation, You achieved best score: 10000">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="imgReplay" fitHeight="94.0" fitWidth="113.0" layoutX="265.0" layoutY="109.0" onMousePressed="#onImgReplayPressed" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/replay.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgBack" fitHeight="88.0" fitWidth="92.0" layoutX="121.0" layoutY="112.0" onMousePressed="#onImgBackPressed" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/back_to_mainmenu.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

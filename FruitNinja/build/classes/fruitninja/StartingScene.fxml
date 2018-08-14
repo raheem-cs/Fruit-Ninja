@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="434.0" prefWidth="631.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fruitninja.StartingSceneController">
+   <children>
+      <ImageView fx:id="imgBackground" fitHeight="648.0" fitWidth="1046.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/background.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgLogo" fitHeight="176.0" fitWidth="472.0" layoutX="282.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo.png" />
+         </image>
+      </ImageView>
+      <Circle fx:id="circle" fill="#9ed0ff00" layoutX="520.0" layoutY="348.0" radius="127.0" stroke="#4cb01a" strokeType="INSIDE" />
+      <Text fx:id="txtStartTop" fill="#24d347" layoutX="493.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start" wrappingWidth="222.13671875">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtStartBottom" fill="#59c344" layoutX="493.0" layoutY="456.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start" wrappingWidth="222.13671875">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Text>
+      <Rectangle fx:id="restangle" arcHeight="100.0" arcWidth="5.0" fill="#80633f75" height="75.0" layoutX="393.0" layoutY="524.0" onMousePressed="#onHighScoreRectanglePressed" stroke="#a15747c5" strokeLineCap="ROUND" strokeLineJoin="ROUND" width="254.0" />
+      <Text fx:id="txtHighScore" fill="WHITE" layoutX="445.0" layoutY="570.0" onMousePressed="#onHighScoresTxtPressed" strokeType="OUTSIDE" strokeWidth="0.0" text="High Scores" wrappingWidth="172.58063985407352">
+         <font>
+            <Font name="Vani" size="28.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="imgSound" fitHeight="58.0" fitWidth="45.0" layoutX="31.0" layoutY="577.0" onMousePressed="#onImgSoundPressed" opacity="0.91" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/sound_icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgBlockSound" fitHeight="56.0" fitWidth="51.0" layoutX="28.0" layoutY="574.0" onDragDetected="#onImgBlockSoundPressed" onMousePressed="#onImgBlockSoundPressed" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/block_icon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

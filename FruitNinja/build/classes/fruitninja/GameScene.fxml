@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="648.0" prefWidth="1037.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fruitninja.GameSceneController">
+   <children>
+      <ImageView fx:id="imgBackground" fitHeight="648.0" fitWidth="1037.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/background.jpg" />
+         </image>
+      </ImageView>
+      <Text fx:id="txtCountDown" fill="#ff7400" layoutX="960.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="90">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="59.0" fitWidth="72.0" layoutX="8.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" rotate="-60.3">
+         <image>
+            <Image url="@../images/halfwatermelon.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="txtCuttedFruits" fill="RED" layoutX="76.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text fill="RED" layoutX="21.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BEST:">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtScore" fill="RED" layoutX="77.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="imgPause" fitHeight="79.0" fitWidth="163.0" layoutX="14.0" layoutY="569.0" onMousePressed="#onImgPausePressed" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/pause_button.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgResume" fitHeight="58.0" fitWidth="57.0" layoutX="25.0" layoutY="569.0" onMousePressed="#omImgResumePressed" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/resume_button.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
