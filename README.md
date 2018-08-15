@@ -28,7 +28,9 @@ Go to C:\ and create new text file with name: Scores.txt, so scores works.
 
 #### Screenshots:
 
-Will be added soon.
+<img src="https://www.gulf-up.com/08-2018/1534277921291.png" width="250"> <img src="https://www.gulf-up.com/08-2018/1534277921332.png" width="250"> <img src="https://www.gulf-up.com/08-2018/1534277921363.png" width="250">
+<img src="https://www.gulf-up.com/08-2018/1534278555241.png" width="250"> <img src="https://www.gulf-up.com/08-2018/1534278555292.png" width="250"> <img src="https://www.gulf-up.com/08-2018/1534278555333.png" width="250">
+<img src="https://www.gulf-up.com/08-2018/1534278864021.png" width="250">
 
 #### Video:
 
